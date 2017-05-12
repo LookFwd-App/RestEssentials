@@ -91,7 +91,7 @@ public struct JSON : CustomStringConvertible, ExpressibleByArrayLiteral, Express
     /// Get the JSON object from this value.
     ///
     /// - returns: The JSON object this value represents or `nil` if this value is not a JSON object.
-    private var object: [String : JSONValue]? {
+    public var object: [String : JSONValue]? {
         return raw as? [String : JSONValue]
     }
 
